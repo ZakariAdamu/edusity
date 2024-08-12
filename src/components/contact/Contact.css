@@ -75,3 +75,16 @@ textarea::placeholder {
     /* background: #00c642; */
     /* background: #0f963c; */
 }
+
+/* ========= media query =========== */
+
+@media (width <=700px) {
+    .contact {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .contact-col {
+        padding: 20px;
+    }
+}
