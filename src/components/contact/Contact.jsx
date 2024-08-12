@@ -36,7 +36,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="contact">
+		<div className="contact" id="contact">
 			<div className="contact-col">
 				<h3>
 					Send us a message
@@ -71,25 +71,20 @@ const Contact = () => {
 			</div>
 			<div className="contact-col">
 				<form onSubmit={onSubmit}>
-					<label htmlFor="name">Your name:</label>
-					<input
-						type="text"
-						name="name"
-						placeholder="Please enter your name"
-						required
-					/>
-					<label htmlFor="">Email:</label>
+					<label htmlFor="name">Name</label>
+					<input type="text" name="name" placeholder="Your name" required />
+					<label htmlFor="">Email</label>
 					<input
 						type="email"
 						name="email"
-						placeholder="Please enter your email"
+						placeholder="Email address"
 						required
 					/>
-					<label htmlFor="">Message:</label>
+					<label htmlFor="">Message</label>
 					<textarea
 						name="message"
-						rows=""
-						placeholder="Please enter your message..."
+						rows="6"
+						placeholder="Enter your message here..."
 						required
 					></textarea>
 					<button className="btn dark-btn">Submit</button>

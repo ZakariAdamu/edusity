@@ -5,7 +5,7 @@ import play_icon from "../../assets/play-icon.png";
 
 const About = () => {
 	return (
-		<div className="about">
+		<div className="about" id="about">
 			<div className="about-left">
 				<img className="about-img" src={about_img} alt="about image" />
 				<img className="play-icon" src={play_icon} alt="play icon" />

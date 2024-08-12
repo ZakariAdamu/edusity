@@ -49,11 +49,17 @@
     width: 100% !important;
     background: #EBECFE;
     padding: 15px;
-    border: 0;
+    border: 1px solid #bdbcbc;
     outline: 0;
+    border-radius: 10px;
     margin-bottom: 15px;
     margin-top: 5px;
-    resize: none;
+    /* resize: none; */
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
 }
 
 .contact-col span {
