@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import dark_arrow from "../../assets/dark-arrow.png";
+import { Link } from "react-scroll";
 const Hero = () => {
 	return (
 		<div className="hero container" id="hero">
@@ -11,9 +12,15 @@ const Hero = () => {
 					knowledge, skills, and experience needed to excel in any field of your
 					choice.{" "}
 				</p>
-				<button className="btn">
+				<Link
+					to="programs"
+					smooth={true}
+					offset={-260}
+					duration={300}
+					className="btn"
+				>
 					Explore more <img src={dark_arrow} />
-				</button>
+				</Link>
 			</div>
 		</div>
 	);
